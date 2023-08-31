@@ -191,9 +191,7 @@ header section .explore-btn:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 3;
-  text-decoration: none;
-  color: #000;
+  z-index: 1;
 }
 .home-section-two .home-section-two-container article .home-section-two-top {
   position: relative;
@@ -231,14 +229,14 @@ header section .explore-btn:hover {
   font-weight: 300;
   margin-bottom: 12px;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-empty {
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon {
   margin-right: 12px;
   position: relative;
+  z-index: 3;
   cursor: pointer;
-  z-index: 5;
   transition: fill 0.3s ease-out;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-empty:hover path {
-  fill: #9356dc;
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon:hover path {
+  fill: url(#heartGradientHover);
   stroke: none;
 }/*# sourceMappingURL=main.css.map */
