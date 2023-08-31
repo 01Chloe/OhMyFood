@@ -250,13 +250,31 @@ header {
             stroke: none;
           }
         }
-        // .heart-gradient-stop1 {
-        //   stop-color: vars.$primary-dark-color;
-        // }
-        // .heart-gradient-stop2 {
-        //   stop-color: vars.$primary-light-color;
-        // }
       }
     }
+  }
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  .footer-logo {
+    margin-bottom: 16px;
+    font-family: vars.$secondary-font-fam;
+    font-size: 18px;
+  }
+  div {
+    margin-bottom: 7px;
+    a {
+      margin-left: 11px;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 7px;
   }
 }

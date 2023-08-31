@@ -239,4 +239,28 @@ header section .explore-btn:hover {
 .home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon:hover path {
   fill: url(#heartGradientHover);
   stroke: none;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-logo {
+  margin-bottom: 16px;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+footer div {
+  margin-bottom: 7px;
+}
+footer div a {
+  margin-left: 11px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 7px;
 }/*# sourceMappingURL=main.css.map */
