@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 14px;
+  text-align: center;
+}
+header h1 img {
+  width: 197px;
+  height: 36px;
+  padding: 0 19px 0 16px;
+} /*# sourceMappingURL=main.css.map */

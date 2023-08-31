@@ -1,0 +1,22 @@
+@use "sass/variables" as vars;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // background-color: vars.$main-color;
+}
+
+header {
+  padding: 14px;
+  text-align: center;
+  h1 {
+    img {
+      width: 197px;
+      height: 36px;
+      padding: 0 19px 0 16px;
+    }
+  }
+}
