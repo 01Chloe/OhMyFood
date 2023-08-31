@@ -6,6 +6,65 @@
   padding: 0;
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  animation: loaderAnim 1.8s ease-out forwards;
+}
+.loader .dot {
+  position: absolute;
+  top: 45%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: loaderDotAnim 0.8s cubic-bezier(0.13, -0.13, 0.79, 0.36) 3 backwards;
+}
+.loader .dot-one {
+  left: 20%;
+  background-color: #9356dc;
+  animation-delay: 0.2s;
+}
+.loader .dot-two {
+  left: 45%;
+  background-color: #ff79da;
+  animation-delay: 0.4s;
+}
+.loader .dot-three {
+  left: 70%;
+  background-color: #89c8fa;
+  animation-delay: 0.6s;
+}
+
+@keyframes loaderAnim {
+  0%, 80% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes loaderDotAnim {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 header {
   padding: 14px;
   text-align: center;
@@ -14,4 +73,4 @@ header h1 img {
   width: 197px;
   height: 36px;
   padding: 0 19px 0 16px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
