@@ -14,15 +14,13 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 10;
-  background-color: #fff;
   width: 100%;
   height: 100%;
+  background-color: #fff;
   pointer-events: none;
   animation: loaderAnim 2s ease-out forwards;
   .dot {
@@ -144,6 +142,7 @@ header {
       padding: 28px 0;
       display: flex;
       flex-direction: row;
+      align-items: center;
       margin-left: 11px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       .home-section-one-number {
@@ -187,7 +186,7 @@ header {
   }
   .home-section-two-container {
     article {
-      max-width: 340px;
+      max-width: 715px;
       height: 251px;
       border-radius: 15px;
       background-color: #fff;
