@@ -1,0 +1,23 @@
+footer {
+  background-color: vars.$dark-grey-color;
+  color: vars.$pure-white-color;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  .footer-logo {
+    margin-bottom: 16px;
+    font-family: typo.$secondary-font-fam;
+    font-size: 18px;
+  }
+  div {
+    margin-bottom: 7px;
+    a {
+      margin-left: 11px;
+    }
+  }
+  a {
+    color: vars.$pure-white-color;
+    text-decoration: none;
+    margin-bottom: 7px;
+  }
+}
