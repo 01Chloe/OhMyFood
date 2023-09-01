@@ -67,6 +67,20 @@ body {
     transform: translateY(0);
   }
 }
+@media screen and (min-width: 768px) {
+  .loader .dot {
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .loader .dot {
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
 header {
   padding: 14px 0 13px;
   text-align: center;
@@ -152,21 +166,25 @@ header section .explore-btn:hover {
 .home-section-one .home-section-one-container .home-section-one-block .fa-mobile-screen-button,
 .home-section-one .home-section-one-container .home-section-one-block .fa-list-ul,
 .home-section-one .home-section-one-container .home-section-one-block .fa-store {
-  cursor: pointer;
   color: #7e7e7e;
   font-size: 18px;
-  transition: color 0.1s ease-out;
-}
-.home-section-one .home-section-one-container .home-section-one-block .fa-mobile-screen-button:hover,
-.home-section-one .home-section-one-container .home-section-one-block .fa-list-ul:hover,
-.home-section-one .home-section-one-container .home-section-one-block .fa-store:hover {
-  color: #9356dc;
 }
 .home-section-one .home-section-one-container .home-section-one-block p {
   margin-left: 23px;
   font-weight: 500;
 }
 
+@media screen and (min-width: 1024px) {
+  .home-section-one,
+  .home-section-two {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .home-section-one .home-section-one-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .home-section-two {
   padding: 54px 18px 66px 17px;
   background-color: #f6f6f6;
@@ -175,7 +193,7 @@ header section .explore-btn:hover {
   margin-bottom: 26px;
 }
 .home-section-two .home-section-two-container article {
-  max-width: 715px;
+  max-width: 970px;
   height: 251px;
   border-radius: 15px;
   background-color: #fff;
@@ -228,16 +246,38 @@ header section .explore-btn:hover {
   font-weight: 300;
   margin-bottom: 12px;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon {
-  margin-right: 12px;
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-container {
   position: relative;
-  z-index: 3;
-  cursor: pointer;
-  transition: fill 0.3s ease-out;
+  width: 23px;
+  height: 21px;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon:hover path {
-  fill: url(#heartGradientHover);
-  stroke: none;
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-container .heart-icon-empty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  margin-right: 12px;
+  transition: opacity 0.5s ease-out;
+  cursor: pointer;
+}
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-container .heart-icon-empty:hover path {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-container .heart-icon-empty:hover ~ .heart-icon-saved {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.home-section-two .home-section-two-container article .home-section-two-bottom .heart-icon-container .heart-icon-saved {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 12px;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 footer {

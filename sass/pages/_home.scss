@@ -28,18 +28,27 @@
       .fa-mobile-screen-button,
       .fa-list-ul,
       .fa-store {
-        cursor: pointer;
         color: #7e7e7e;
         font-size: 18px;
-        transition: color 0.1s ease-out;
-        &:hover {
-          color: vars.$primary-dark-color;
-        }
       }
       p {
         margin-left: 23px;
         font-weight: 500;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-section-one,
+  .home-section-two {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .home-section-one {
+    .home-section-one-container {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
@@ -52,7 +61,7 @@
   }
   .home-section-two-container {
     article {
-      max-width: 715px;
+      max-width: 970px;
       height: 251px;
       border-radius: 15px;
       background-color: vars.$pure-white-color;
@@ -104,15 +113,37 @@
             margin-bottom: 12px;
           }
         }
-        .heart-icon {
-          margin-right: 12px;
+        .heart-icon-container {
           position: relative;
-          z-index: 3;
-          cursor: pointer;
-          transition: fill 0.3s ease-out;
-          &:hover path {
-            fill: url(#heartGradientHover);
-            stroke: none;
+          width: 23px;
+          height: 21px;
+          .heart-icon-empty {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 3;
+            margin-right: 12px;
+            transition: opacity 0.5s ease-out;
+            cursor: pointer;
+            &:hover path {
+              opacity: 0;
+              transition: opacity 0.5s ease-out;
+            }
+            &:hover ~ .heart-icon-saved {
+              opacity: 1;
+              transform: scale(1);
+              transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+            }
+          }
+          .heart-icon-saved {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 12px;
+            opacity: 0;
+            transform: scale(0);
+            transform-origin: bottom;
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
           }
         }
       }
