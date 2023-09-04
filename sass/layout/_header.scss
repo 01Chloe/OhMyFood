@@ -1,11 +1,12 @@
 header {
-  padding: 14px 0 13px;
+  padding: 14px 0 0;
   text-align: center;
   h1 {
     img {
       width: 197px;
       height: 36px;
       padding: 0 19px 0 16px;
+      margin-bottom: 5px;
     }
   }
   .location {
@@ -16,7 +17,7 @@ header {
     background-color: #eaeaea;
     color: vars.$dark-grey-color;
     .fa-location-dot {
-      font-size: 16px;
+      font-size: 1em;
     }
     p {
       margin-left: 17px;
@@ -32,7 +33,7 @@ header {
     }
     p {
       color: vars.$dark-grey-color;
-      font-size: 18px;
+      font-size: 1.12em;
       font-weight: 300;
       margin-bottom: 27px;
     }
@@ -43,6 +44,8 @@ header {
         vars.$primary-dark-color
       );
       color: vars.$pure-white-color;
+      font-family: vars.$main-font-fam;
+      font-weight: 500;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
       font-weight: 500;
       padding: 13px 18px;
@@ -53,6 +56,32 @@ header {
       &:hover {
         opacity: 0.85;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    section {
+      h2 {
+        font-size: 1.87em;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1150px) {
+  header {
+    padding-top: 30px;
+    h1 {
+      img {
+        margin-bottom: 23px;
+      }
+    }
+    section {
+      padding: 30px 0;
+      h2 {
+        font-size: 2.5em;
       }
     }
   }
