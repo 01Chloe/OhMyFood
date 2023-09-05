@@ -1,6 +1,8 @@
 @use "sass/base/variables" as vars;
 @import "sass/base/reset";
 @import "sass/layout/loader";
+@import "sass/components/heart-icon";
 @import "sass/layout/header";
 @import "sass/pages/home";
+@import "sass/pages/palette-du-gout";
 @import "sass/layout/footer";

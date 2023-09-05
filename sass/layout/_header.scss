@@ -1,12 +1,23 @@
 header {
   padding: 14px 0 0;
   text-align: center;
-  h1 {
-    img {
-      width: 197px;
-      height: 36px;
-      padding: 0 19px 0 16px;
-      margin-bottom: 5px;
+  .logo-section {
+    position: relative;
+    .back-link {
+      position: absolute;
+      top: 0;
+      left: 17px;
+      color: vars.$dark-grey-color;
+      font-size: 1.37em;
+      font-weight: 800;
+    }
+    h1 {
+      img {
+        width: 197px;
+        height: 36px;
+        padding: 0 19px 0 16px;
+        margin-bottom: 5px;
+      }
     }
   }
   .location {
@@ -25,7 +36,7 @@ header {
     }
   }
   section {
-    padding: 39px 20px 57px;
+    padding: 39px 20px 83px;
     background-color: vars.$light-white-color;
     line-height: normal;
     h2 {
@@ -35,9 +46,9 @@ header {
       color: vars.$dark-grey-color;
       font-size: 1.12em;
       font-weight: 300;
-      margin-bottom: 27px;
+      margin-bottom: 40px;
     }
-    .explore-btn {
+    .explore-link {
       background: linear-gradient(
         177deg,
         vars.$primary-light-color,
@@ -46,10 +57,10 @@ header {
       color: vars.$pure-white-color;
       font-family: vars.$main-font-fam;
       font-weight: 500;
+      text-decoration: none;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
       font-weight: 500;
       padding: 13px 18px;
-      border: none;
       border-radius: 25px;
       cursor: pointer;
       transition: opacity 0.3s ease-out;
@@ -79,7 +90,7 @@ header {
       }
     }
     section {
-      padding: 30px 0;
+      padding: 30px 0 43px;
       h2 {
         font-size: 2.5em;
       }
