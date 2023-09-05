@@ -152,3 +152,29 @@
     transform: translateX(0);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .banner-image {
+    height: 340px;
+  }
+  .pages-container {
+    padding: 32px 100px 40px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .banner-image {
+    height: 383px;
+  }
+  .pages-container {
+    padding: 32px 210px 40px;
+    max-width: 1055px;
+    margin: -50px auto 0;
+    .title {
+      justify-content: center;
+      h2 {
+        margin-right: 24px;
+        margin-left: 0px;
+      }
+    }
+  }
+}
