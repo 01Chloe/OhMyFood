@@ -510,6 +510,8 @@ header section .explore-link:hover {
   }
   .pages-container {
     padding: 32px 100px 40px;
+    max-width: 730px;
+    margin: -50px auto 0;
   }
 }
 @media screen and (min-width: 1150px) {
@@ -519,7 +521,6 @@ header section .explore-link:hover {
   .pages-container {
     padding: 32px 210px 40px;
     max-width: 1055px;
-    margin: -50px auto 0;
   }
   .pages-container .title {
     justify-content: center;
