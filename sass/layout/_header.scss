@@ -1,3 +1,4 @@
+/***** Header *****/
 header {
   padding: 14px 0 0;
   text-align: center;
@@ -12,12 +13,11 @@ header {
       font-weight: 800;
     }
     h1 {
-      img {
-        width: 197px;
-        height: 36px;
-        padding: 0 19px 0 16px;
-        margin-bottom: 5px;
-      }
+      font-family: vars.$secondary-font-fam;
+      font-size: 1.87em;
+      padding: 0 19px 13px 16px;
+      color: #101010;
+      letter-spacing: 0.8px;
     }
   }
   .location {
@@ -72,6 +72,7 @@ header {
   }
 }
 
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   header {
     section {
@@ -81,14 +82,15 @@ header {
     }
   }
 }
+
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   header {
     padding-top: 30px;
     .logo-section {
       h1 {
-        img {
-          margin-bottom: 22px;
-        }
+        padding-bottom: 31px;
+        font-size: 34px;
       }
     }
     section {

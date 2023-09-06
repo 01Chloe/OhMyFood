@@ -1,3 +1,4 @@
+/***** Footer *****/
 footer {
   background-color: vars.$dark-grey-color;
   color: vars.$pure-white-color;
@@ -26,11 +27,14 @@ footer {
   }
 }
 
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   footer {
     text-align: center;
   }
 }
+
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   footer {
     padding: 30px 25px;

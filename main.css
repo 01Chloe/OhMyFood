@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/***** Loader *****/
 .loader {
   position: fixed;
   top: 0;
@@ -29,7 +30,8 @@ body {
   height: 30px;
   border-radius: 50%;
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-  animation: loaderDotAnim 0.8s cubic-bezier(0.13, -0.13, 0.79, 0.36) 3 backwards;
+  animation: loaderDotAnim 0.8s cubic-bezier(0.13, -0.13, 0.79, 0.36) 3
+    backwards;
 }
 .loader .dot-one {
   left: 20%;
@@ -47,8 +49,10 @@ body {
   animation-delay: 0.6s;
 }
 
+/***** Loader animation *****/
 @keyframes loaderAnim {
-  0%, 80% {
+  0%,
+  80% {
     visibility: visible;
     opacity: 1;
   }
@@ -57,6 +61,7 @@ body {
     opacity: 0;
   }
 }
+/***** Dots loader animation *****/
 @keyframes loaderDotAnim {
   0% {
     transform: translateY(0);
@@ -68,6 +73,7 @@ body {
     transform: translateY(0);
   }
 }
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   .loader .dot {
     width: 50px;
@@ -75,6 +81,7 @@ body {
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
   }
 }
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   .loader .dot {
     width: 60px;
@@ -116,6 +123,7 @@ body {
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
+/***** Header *****/
 header {
   padding: 14px 0 0;
   text-align: center;
@@ -131,11 +139,12 @@ header .logo-section .back-link {
   font-size: 1.37em;
   font-weight: 800;
 }
-header .logo-section h1 img {
-  width: 197px;
-  height: 36px;
-  padding: 0 19px 0 16px;
-  margin-bottom: 5px;
+header .logo-section h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.87em;
+  padding: 0 19px 13px 16px;
+  color: #101010;
+  letter-spacing: 0.8px;
 }
 header .location {
   display: flex;
@@ -184,17 +193,20 @@ header section .explore-link:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   header section h2 {
     font-size: 1.87em;
   }
 }
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   header {
     padding-top: 30px;
   }
-  header .logo-section h1 img {
-    margin-bottom: 22px;
+  header .logo-section h1 {
+    padding-bottom: 31px;
+    font-size: 34px;
   }
   header section {
     padding: 30px 0 43px;
@@ -203,6 +215,7 @@ header section .explore-link:hover {
     font-size: 2.5em;
   }
 }
+/***** Home page section one *****/
 .home-section-one {
   padding: 48px 20px 68px;
 }
@@ -217,7 +230,10 @@ header section .explore-link:hover {
   margin-left: 11px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.home-section-one .home-section-one-container .home-section-one-block .home-section-one-number {
+.home-section-one
+  .home-section-one-container
+  .home-section-one-block
+  .home-section-one-number {
   background-color: #9356dc;
   color: #fff;
   border-radius: 50%;
@@ -231,9 +247,18 @@ header section .explore-link:hover {
   margin-left: -12px;
   margin-right: 23px;
 }
-.home-section-one .home-section-one-container .home-section-one-block .fa-mobile-screen-button,
-.home-section-one .home-section-one-container .home-section-one-block .fa-list-ul,
-.home-section-one .home-section-one-container .home-section-one-block .fa-store {
+.home-section-one
+  .home-section-one-container
+  .home-section-one-block
+  .fa-mobile-screen-button,
+.home-section-one
+  .home-section-one-container
+  .home-section-one-block
+  .fa-list-ul,
+.home-section-one
+  .home-section-one-container
+  .home-section-one-block
+  .fa-store {
   color: #7e7e7e;
   font-size: 1.12em;
 }
@@ -242,11 +267,13 @@ header section .explore-link:hover {
   font-weight: 500;
 }
 
+/***** Responsive tablet home page section one *****/
 @media screen and (min-width: 768px) {
   .home-section-one {
     padding: 48px 100px 68px;
   }
 }
+/***** Responsive desktop home page section one *****/
 @media screen and (min-width: 1150px) {
   .home-section-one {
     padding: 50px 180px;
@@ -264,6 +291,7 @@ header section .explore-link:hover {
     margin-left: 26px;
   }
 }
+/***** Home page section two *****/
 .home-section-two {
   padding: 54px 18px 66px 17px;
   background-color: #f6f6f6;
@@ -293,13 +321,21 @@ header section .explore-link:hover {
   position: relative;
   height: 70%;
 }
-.home-section-two .home-section-two-container article .home-section-two-top img {
+.home-section-two
+  .home-section-two-container
+  article
+  .home-section-two-top
+  img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.home-section-two .home-section-two-container article .home-section-two-top .new {
+.home-section-two
+  .home-section-two-container
+  article
+  .home-section-two-top
+  .new {
   padding: 7px 9px;
   border-radius: 2px;
   background-color: #99e2d0;
@@ -317,15 +353,26 @@ header section .explore-link:hover {
   align-items: center;
   padding: 0 13px;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .home-section-two-bottom-txt h3 {
+.home-section-two
+  .home-section-two-container
+  article
+  .home-section-two-bottom
+  .home-section-two-bottom-txt
+  h3 {
   margin: 16px 0 5px;
 }
-.home-section-two .home-section-two-container article .home-section-two-bottom .home-section-two-bottom-txt p {
+.home-section-two
+  .home-section-two-container
+  article
+  .home-section-two-bottom
+  .home-section-two-bottom-txt
+  p {
   font-size: 1.06em;
   font-weight: 300;
   margin-bottom: 12px;
 }
 
+/***** Responsive tablet home page section two *****/
 @media screen and (min-width: 768px) {
   .home-section-two {
     padding: 54px 100px 66px;
@@ -335,12 +382,13 @@ header section .explore-link:hover {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 25px;
     -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
   .home-section-two .home-section-two-container article {
     margin-bottom: 0;
   }
 }
+/***** Responsive desktop home page section two *****/
 @media screen and (min-width: 1150px) {
   .home-section-two {
     padding: 30px 180px;
@@ -351,18 +399,20 @@ header section .explore-link:hover {
   .home-section-two .home-section-two-container {
     row-gap: 50px;
     -moz-column-gap: 100px;
-         column-gap: 100px;
+    column-gap: 100px;
   }
 }
+/***** Restaurants pages banner image *****/
 .banner-image {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   z-index: -1;
 }
 
+/***** Restaurants pages container *****/
 .pages-container {
   padding: 32px 13px 40px;
   background-color: #f6f6f6;
@@ -400,6 +450,7 @@ header section .explore-link:hover {
   position: relative;
   display: inline;
   font-weight: 300;
+  font-size: 1em;
   padding-bottom: 8px;
   text-transform: uppercase;
 }
@@ -444,12 +495,13 @@ header section .explore-link:hover {
 .pages-container .restaurant-section .meal-container .txt-container .txt {
   max-width: 60%;
 }
-.pages-container .restaurant-section .meal-container .txt-container .txt h3 {
+.pages-container .restaurant-section .meal-container .txt-container .txt h4 {
   font-weight: 500;
   margin-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 1.12em;
 }
 .pages-container .restaurant-section .meal-container .txt-container .txt p {
   overflow: hidden;
@@ -498,12 +550,14 @@ header section .explore-link:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+/***** Restaurants pages animation *****/
 @keyframes restaurantSectionAnim {
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   .banner-image {
     height: 340px;
@@ -514,6 +568,7 @@ header section .explore-link:hover {
     margin: -50px auto 0;
   }
 }
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   .banner-image {
     height: 383px;
@@ -530,6 +585,7 @@ header section .explore-link:hover {
     margin-left: 0px;
   }
 }
+/***** Footer *****/
 footer {
   background-color: #353535;
   color: #fff;
@@ -558,11 +614,13 @@ footer .footer-txt a {
   margin-bottom: 7px;
 }
 
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   footer {
     text-align: center;
   }
 }
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   footer {
     padding: 30px 25px;
@@ -589,4 +647,4 @@ footer .footer-txt a {
   footer .footer-txt a {
     margin: 0 15px 0 0;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,4 @@
+/***** Restaurants pages banner image *****/
 .banner-image {
   width: 100%;
   height: 275px;
@@ -5,6 +6,7 @@
   position: relative;
   z-index: -1;
 }
+/***** Restaurants pages container *****/
 .pages-container {
   padding: 32px 13px 40px;
   background-color: vars.$light-white-color;
@@ -40,6 +42,7 @@
       position: relative;
       display: inline;
       font-weight: 300;
+      font-size: 1em;
       padding-bottom: 8px;
       text-transform: uppercase;
       &::after {
@@ -83,12 +86,13 @@
         transition: width 0.3s ease-out;
         .txt {
           max-width: 60%;
-          h3 {
+          h4 {
             font-weight: 500;
             margin-bottom: 5px;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            font-size: 1.12em;
           }
           p {
             overflow: hidden;
@@ -146,6 +150,7 @@
   }
 }
 
+/***** Restaurants pages animation *****/
 @keyframes restaurantSectionAnim {
   to {
     opacity: 1;
@@ -153,6 +158,7 @@
   }
 }
 
+/***** Responsive tablet *****/
 @media screen and (min-width: 768px) {
   .banner-image {
     height: 340px;
@@ -163,6 +169,8 @@
     margin: -50px auto 0;
   }
 }
+
+/***** Responsive desktop *****/
 @media screen and (min-width: 1150px) {
   .banner-image {
     height: 383px;

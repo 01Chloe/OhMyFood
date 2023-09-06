@@ -1,3 +1,4 @@
+/***** Home page section one *****/
 .home-section-one {
   padding: 48px 20px 68px;
   .home-section-one-container {
@@ -39,11 +40,14 @@
   }
 }
 
+/***** Responsive tablet home page section one *****/
 @media screen and (min-width: 768px) {
   .home-section-one {
     padding: 48px 100px 68px;
   }
 }
+
+/***** Responsive desktop home page section one *****/
 @media screen and (min-width: 1150px) {
   .home-section-one {
     padding: 50px 180px;
@@ -64,6 +68,7 @@
   }
 }
 
+/***** Home page section two *****/
 .home-section-two {
   padding: 54px 18px 66px 17px;
   background-color: vars.$light-white-color;
@@ -129,6 +134,7 @@
   }
 }
 
+/***** Responsive tablet home page section two *****/
 @media screen and (min-width: 768px) {
   .home-section-two {
     padding: 54px 100px 66px;
@@ -143,6 +149,7 @@
     }
   }
 }
+/***** Responsive desktop home page section two *****/
 @media screen and (min-width: 1150px) {
   .home-section-two {
     padding: 30px 180px;
