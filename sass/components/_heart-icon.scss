@@ -2,6 +2,26 @@
   position: relative;
   width: 23px;
   height: 21px;
+  .heart-icon-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    margin-right: 12px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .heart-icon-input:checked ~ .heart-icon-empty path {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  .heart-icon-input:checked ~ .heart-icon-saved {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
   .heart-icon-empty {
     position: absolute;
     top: 0;
@@ -9,16 +29,6 @@
     z-index: 3;
     margin-right: 12px;
     transition: opacity 0.5s ease-out;
-    cursor: pointer;
-    &:hover path {
-      opacity: 0;
-      transition: opacity 0.5s ease-out;
-    }
-    &:hover ~ .heart-icon-saved {
-      opacity: 1;
-      transform: scale(1);
-      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-    }
   }
   .heart-icon-saved {
     position: absolute;

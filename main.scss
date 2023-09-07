@@ -1,8 +1,10 @@
 @use "sass/base/variables" as vars;
 @import "sass/base/reset";
 @import "sass/layout/loader";
+@import "sass/components/buttons";
 @import "sass/components/heart-icon";
 @import "sass/layout/header";
 @import "sass/pages/home";
 @import "sass/pages/restaurants";
+@import "sass/components/meal-component";
 @import "sass/layout/footer";

@@ -55,98 +55,13 @@
         background-color: vars.$secondary-light-color;
       }
     }
-    .meal-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 20px;
-      border-radius: 15px;
-      background-color: vars.$pure-white-color;
-      box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      cursor: pointer;
-      &:hover {
-        .checked {
-          width: 59px;
-          opacity: 1;
-          transition: width 0.2s ease-out, opacity 0.3s ease-out;
-        }
-        .txt-container {
-          width: calc(70% - 50px);
-          transition: width 0.3s ease-out;
-        }
-      }
-      .txt-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-grow: 1;
-        min-width: 70%;
-        padding: 15px;
-        transition: width 0.3s ease-out;
-        .txt {
-          max-width: 60%;
-          h4 {
-            font-weight: 500;
-            margin-bottom: 5px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-size: 1.12em;
-          }
-          p {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            font-size: 0.93em;
-            font-weight: 300;
-          }
-        }
-        span {
-          font-size: 0.93em;
-          font-weight: 700;
-          color: vars.$dark-grey-color;
-          letter-spacing: 0.5px;
-          align-self: end;
-        }
-      }
-      .checked {
-        width: 0;
-        height: auto;
-        background-color: vars.$secondary-light-color;
-        color: vars.$pure-white-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 15px 15px 0;
-        font-size: 1.12em;
-        opacity: 0;
-        transition: width 0.2s ease-out, opacity 0.5s ease-out;
-      }
-    }
   }
   .order-btn {
-    background: linear-gradient(
-      177deg,
-      vars.$primary-light-color,
-      vars.$primary-dark-color
-    );
     display: block;
-    color: vars.$pure-white-color;
-    font-family: vars.$main-font-fam;
-    font-weight: 500;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
     margin: 0 auto;
     padding: 16px 49px;
     border: none;
-    border-radius: 25px;
     cursor: pointer;
-    transition: opacity 0.3s ease-out;
-    &:hover {
-      opacity: 0.85;
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-    }
   }
 }
 

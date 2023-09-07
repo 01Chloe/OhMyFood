@@ -1,0 +1,20 @@
+.explore-link,
+.order-btn {
+  background: linear-gradient(
+    177deg,
+    vars.$primary-light-color,
+    vars.$primary-dark-color
+  );
+  color: vars.$pure-white-color;
+  font-family: vars.$main-font-fam;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 13px 18px;
+  border-radius: 25px;
+  transition: opacity 0.3s ease-out;
+  &:hover {
+    opacity: 0.85;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
