@@ -1,62 +1,63 @@
 /***** Home page section one *****/
 .home-section-one {
-  padding: 48px 20px 68px;
-  .home-section-one-container {
+  padding: 50px 20px 70px;
+  &-container {
+    list-style-type: none;
     .home-section-one-block {
       border-radius: 20px;
       background-color: vars.$light-white-color;
-      margin: 26px 0;
-      padding: 28px 0;
+      margin: 25px 0 0;
+      padding: 30px 0;
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 11px;
+      margin-left: 10px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-      .home-section-one-number {
-        background-color: vars.$primary-dark-color;
-        color: vars.$pure-white-color;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.88em;
-        font-weight: 500;
-        margin-left: -12px;
-        margin-right: 23px;
-      }
-      .fa-mobile-screen-button,
-      .fa-list-ul,
-      .fa-store {
-        color: #7e7e7e;
-        font-size: 1.12em;
-      }
-      p {
-        margin-left: 23px;
-        font-weight: 500;
-      }
     }
+  }
+}
+.home-section-one {
+  &-number {
+    background-color: vars.$primary-dark-color;
+    color: vars.$pure-white-color;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-left: -12px;
+    margin-right: 23px;
+  }
+  .fa-mobile-screen-button,
+  .fa-list-ul,
+  .fa-store {
+    color: #7e7e7e;
+    font-size: 1.125rem;
+  }
+  p {
+    margin: 0 10px 0 23px;
+    font-weight: 500;
   }
 }
 
 /***** Responsive tablet home page section one *****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.$breakpointTablet) {
   .home-section-one {
-    padding: 48px 100px 68px;
+    padding: 50px 100px 70px;
   }
 }
 
 /***** Responsive desktop home page section one *****/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: vars.$breakpointDesktop) {
   .home-section-one {
     padding: 50px 180px;
-  }
-  .home-section-one {
-    .home-section-one-container {
+    &-container {
       display: flex;
       flex-direction: row;
-      gap: 24px;
+      gap: 25px;
       justify-content: space-between;
       .home-section-one-block {
         flex: 1;
@@ -70,20 +71,20 @@
 
 /***** Home page section two *****/
 .home-section-two {
-  padding: 54px 18px 66px 17px;
+  padding: 55px 20px 65px;
   background-color: vars.$light-white-color;
   h2 {
-    margin-bottom: 26px;
+    margin-bottom: 5px;
   }
-  .home-section-two-container {
-    article {
+  &-container {
+    .home-section-two-article {
       max-width: 970px;
-      height: 251px;
+      height: 250px;
       border-radius: 15px;
       background-color: vars.$pure-white-color;
       overflow: hidden;
       position: relative;
-      margin-bottom: 18px;
+      margin-top: 20px;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
       a {
         position: absolute;
@@ -93,70 +94,72 @@
         height: 100%;
         z-index: 1;
       }
-      .home-section-two-top {
-        position: relative;
-        height: 70%;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .new {
-          padding: 7px 9px;
-          border-radius: 2px;
-          background-color: vars.$secondary-light-color;
-          color: vars.$secondary-dark-color;
-          font-size: 0.87em;
-          font-weight: 500;
-          position: absolute;
-          top: 13px;
-          right: 12px;
-        }
+    }
+  }
+}
+.home-section-two {
+  &-top {
+    position: relative;
+    height: 70%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .new {
+      padding: 7px 10px;
+      border-radius: 2px;
+      background-color: vars.$secondary-light-color;
+      color: vars.$secondary-dark-color;
+      font-size: 0.875rem;
+      font-weight: 500;
+      position: absolute;
+      top: 13px;
+      right: 15px;
+    }
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+    &-txt {
+      h3 {
+        margin: 16px 0 5px;
       }
-      .home-section-two-bottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 13px;
-        .home-section-two-bottom-txt {
-          h3 {
-            margin: 16px 0 5px;
-          }
-          p {
-            font-size: 1.06em;
-            font-weight: 300;
-            margin-bottom: 12px;
-          }
-        }
+      p {
+        font-size: 1.063rem;
+        font-weight: 300;
+        margin-bottom: 15px;
       }
     }
   }
 }
 
 /***** Responsive tablet home page section two *****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.$breakpointTablet) {
   .home-section-two {
-    padding: 54px 100px 66px;
-    .home-section-two-container {
+    padding: 55px 100px 65px;
+    &-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 25px;
       column-gap: 50px;
-      article {
+      .home-section-two-article {
         margin-bottom: 0;
       }
     }
   }
 }
 /***** Responsive desktop home page section two *****/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: vars.$breakpointDesktop) {
   .home-section-two {
     padding: 30px 180px;
     h2 {
-      margin-bottom: 28px;
+      margin-bottom: 8px;
     }
-    .home-section-two-container {
+    &-container {
       row-gap: 50px;
       column-gap: 100px;
     }

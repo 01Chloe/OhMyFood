@@ -8,7 +8,7 @@
 }
 /***** Restaurants pages container *****/
 .pages-container {
-  padding: 32px 13px 40px;
+  padding: 40px 13px;
   background-color: vars.$light-white-color;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
@@ -19,9 +19,9 @@
     align-items: center;
     h2 {
       font-family: vars.$secondary-font-fam;
-      font-size: 1.75em;
+      font-size: 1.75rem;
       color: #101010;
-      margin-left: 4px;
+      margin: 0 15px 0 5px;
     }
   }
   .restaurant-section {
@@ -42,8 +42,8 @@
       position: relative;
       display: inline;
       font-weight: 300;
-      font-size: 1em;
-      padding-bottom: 8px;
+      font-size: 1rem;
+      padding-bottom: 10px;
       text-transform: uppercase;
       &::after {
         content: "";
@@ -59,7 +59,7 @@
   .order-btn {
     display: block;
     margin: 0 auto;
-    padding: 16px 49px;
+    padding: 16px 50px;
     border: none;
     cursor: pointer;
   }
@@ -74,29 +74,29 @@
 }
 
 /***** Responsive tablet *****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.$breakpointTablet) {
   .banner-image {
     height: 340px;
   }
   .pages-container {
-    padding: 32px 100px 40px;
+    padding: 40px 100px;
     max-width: 730px;
     margin: -50px auto 0;
   }
 }
 
 /***** Responsive desktop *****/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: vars.$breakpointDesktop) {
   .banner-image {
-    height: 383px;
+    height: 385px;
   }
   .pages-container {
-    padding: 32px 210px 40px;
+    padding: 55px 210px 40px;
     max-width: 1055px;
     .title {
       justify-content: center;
       h2 {
-        margin-right: 24px;
+        margin-right: 30px;
         margin-left: 0px;
       }
     }

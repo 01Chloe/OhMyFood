@@ -6,16 +6,16 @@ header {
     position: relative;
     .back-link {
       position: absolute;
-      top: 0;
-      left: 17px;
+      top: 10px;
+      left: 25px;
       color: vars.$dark-grey-color;
-      font-size: 1.37em;
+      font-size: 1.375rem;
       font-weight: 800;
     }
     h1 {
       font-family: vars.$secondary-font-fam;
-      font-size: 1.87em;
-      padding: 0 19px 13px 16px;
+      font-size: 1.875rem;
+      padding-bottom: 16px;
       color: #101010;
       letter-spacing: 0.8px;
     }
@@ -27,16 +27,13 @@ header {
     padding: 15px 0;
     background-color: #eaeaea;
     color: vars.$dark-grey-color;
-    .fa-location-dot {
-      font-size: 1em;
-    }
     p {
       margin-left: 17px;
       font-weight: 500;
     }
   }
   section {
-    padding: 39px 20px 83px;
+    padding: 40px 20px 75px;
     background-color: vars.$light-white-color;
     line-height: normal;
     h2 {
@@ -44,7 +41,7 @@ header {
     }
     p {
       color: vars.$dark-grey-color;
-      font-size: 1.12em;
+      font-size: 1.125rem;
       font-weight: 300;
       margin-bottom: 40px;
     }
@@ -55,30 +52,30 @@ header {
 }
 
 /***** Responsive tablet *****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.$breakpointTablet) {
   header {
     section {
       h2 {
-        font-size: 1.87em;
+        font-size: 1.875rem;
       }
     }
   }
 }
 
 /***** Responsive desktop *****/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: vars.$breakpointDesktop) {
   header {
     padding-top: 30px;
     .logo-section {
       h1 {
-        padding-bottom: 31px;
-        font-size: 34px;
+        padding-bottom: 30px;
+        font-size: 2.125rem;
       }
     }
     section {
-      padding: 30px 0 43px;
+      padding: 30px 0 45px;
       h2 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
       }
     }
   }

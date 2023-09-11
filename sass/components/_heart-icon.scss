@@ -5,36 +5,33 @@
   .heart-icon-input {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 12px;
     z-index: 5;
-    margin-right: 12px;
     width: 100%;
     height: 100%;
     opacity: 0;
     cursor: pointer;
-  }
-  .heart-icon-input:checked ~ .heart-icon-empty path {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-  }
-  .heart-icon-input:checked ~ .heart-icon-saved {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    &:checked ~ .heart-icon-empty path {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+    &:checked ~ .heart-icon-saved {
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
   }
   .heart-icon-empty {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 12px;
     z-index: 3;
-    margin-right: 12px;
     transition: opacity 0.5s ease-out;
   }
   .heart-icon-saved {
     position: absolute;
     top: 0;
-    right: 0;
-    margin-right: 12px;
+    right: 12px;
     opacity: 0;
     transform: scale(0);
     transform-origin: bottom;

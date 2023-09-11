@@ -62,7 +62,7 @@
 }
 
 /***** Responsive tablet *****/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.$breakpointTablet) {
   .loader {
     .dot {
       width: 50px;
@@ -73,7 +73,7 @@
 }
 
 /***** Responsive desktop *****/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: vars.$breakpointDesktop) {
   .loader {
     .dot {
       width: 60px;
