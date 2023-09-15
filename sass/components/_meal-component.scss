@@ -52,7 +52,7 @@
   transition: width 0.3s ease-out;
   .txt {
     max-width: 60%;
-    h4 {
+    h3 {
       font-weight: 500;
       margin-bottom: 5px;
       overflow: hidden;
@@ -64,12 +64,12 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      font-size: 0.938rem;
+      font-size: 0.95rem;
       font-weight: 300;
     }
   }
   span {
-    font-size: 0.938rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: vars.$dark-grey-color;
     letter-spacing: 0.5px;
